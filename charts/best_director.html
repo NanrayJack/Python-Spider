@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="c7be26f4fb6943849c8a3127afe2dc51" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_c7be26f4fb6943849c8a3127afe2dc51 = echarts.init(
+            document.getElementById('c7be26f4fb6943849c8a3127afe2dc51'), 'white', {renderer: 'canvas'});
+        var option_c7be26f4fb6943849c8a3127afe2dc51 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "Top250 \u5bfc\u6f14\u6b21\u6570",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u5bab\u5d0e\u9a8f Hayao Miyazaki\u00a0\u00a0\u00a0",
+                    "value": 7
+                },
+                {
+                    "name": "\u53f2\u8482\u6587\u00b7\u65af\u76ae\u5c14\u4f2f\u683c Steven Spielberg\u00a0\u00a0\u00a0",
+                    "value": 7
+                },
+                {
+                    "name": "\u514b\u91cc\u65af\u6258\u5f17\u00b7\u8bfa\u5170 Christopher Nolan\u00a0\u00a0\u00a0",
+                    "value": 7
+                },
+                {
+                    "name": "\u738b\u5bb6\u536b Kar Wai Wong\u00a0\u00a0\u00a0",
+                    "value": 5
+                },
+                {
+                    "name": "\u674e\u5b89 Ang Lee\u00a0\u00a0\u00a0",
+                    "value": 4
+                },
+                {
+                    "name": "\u5927\u536b\u00b7\u82ac\u5947 David Fincher\u00a0\u00a0\u00a0",
+                    "value": 4
+                },
+                {
+                    "name": "\u8a79\u59c6\u65af\u00b7\u5361\u6885\u9686 James Cameron\u00a0\u00a0\u00a0",
+                    "value": 3
+                },
+                {
+                    "name": "\u6731\u585e\u4f69\u00b7\u6258\u7eb3\u591a\u96f7 Giuseppe Tornatore\u00a0\u00a0\u00a0",
+                    "value": 3
+                },
+                {
+                    "name": "\u5218\u9547\u4f1f Jeffrey Lau\u00a0\u00a0\u00a0",
+                    "value": 3
+                },
+                {
+                    "name": "\u5f17\u6717\u897f\u65af\u00b7\u798f\u7279\u00b7\u79d1\u6ce2\u62c9 Francis Ford Coppola\u00a0\u00a0\u00a0",
+                    "value": 3
+                }
+            ],
+            "radius": [
+                "0%",
+                "75%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{b}: {c}"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u5bab\u5d0e\u9a8f Hayao Miyazaki\u00a0\u00a0\u00a0",
+                "\u53f2\u8482\u6587\u00b7\u65af\u76ae\u5c14\u4f2f\u683c Steven Spielberg\u00a0\u00a0\u00a0",
+                "\u514b\u91cc\u65af\u6258\u5f17\u00b7\u8bfa\u5170 Christopher Nolan\u00a0\u00a0\u00a0",
+                "\u738b\u5bb6\u536b Kar Wai Wong\u00a0\u00a0\u00a0",
+                "\u674e\u5b89 Ang Lee\u00a0\u00a0\u00a0",
+                "\u5927\u536b\u00b7\u82ac\u5947 David Fincher\u00a0\u00a0\u00a0",
+                "\u8a79\u59c6\u65af\u00b7\u5361\u6885\u9686 James Cameron\u00a0\u00a0\u00a0",
+                "\u6731\u585e\u4f69\u00b7\u6258\u7eb3\u591a\u96f7 Giuseppe Tornatore\u00a0\u00a0\u00a0",
+                "\u5218\u9547\u4f1f Jeffrey Lau\u00a0\u00a0\u00a0",
+                "\u5f17\u6717\u897f\u65af\u00b7\u798f\u7279\u00b7\u79d1\u6ce2\u62c9 Francis Ford Coppola\u00a0\u00a0\u00a0"
+            ],
+            "selected": {},
+            "show": false
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {}
+    ]
+};
+        chart_c7be26f4fb6943849c8a3127afe2dc51.setOption(option_c7be26f4fb6943849c8a3127afe2dc51);
+    </script>
+</body>
+</html>
