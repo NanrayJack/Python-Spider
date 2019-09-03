@@ -22,7 +22,8 @@ Spider 高效爬虫实践
 使用方法
 ---
 - 豆瓣 250:
-  - 直接运行程序即可
+  - 运行 douban_visual.py
+  - 在浏览器打开生成的 visualising.html
 - 知乎:
   - 补上 serect.py 于根目录, 放自己的知乎 cookie (在浏览器直接复制粘贴即可)
     - 格式为: cookie = 'k=v;k=v;...'
