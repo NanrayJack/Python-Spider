@@ -7,6 +7,16 @@ Spider 高效爬虫实践
 - 豆瓣电影 Top 250 爬取并进行结果可视化:
   - ![](img-show/douban_visual.gif)
 
+- 数据分析:
+  - 高分电影最多的十位导演:
+    - ![](img-show/best_derectors.png)
+  - 高分电影最多的十位主演:
+    - ![](img-show/best_leads.png)
+  - 高分电影最多的十个国家:
+    - ![](img-show/best_country.png)
+  - 前十影片评分与评论数的关系:
+    - ![](img-show/score-vs-comment-num.png)
+
 - 浏览器下拉行为模拟 + cookie 伪造登录, 爬取知乎动态刷新内容
   - ![](img-show/zhuhu_browser.gif)
 
