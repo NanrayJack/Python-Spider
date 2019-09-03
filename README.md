@@ -1,6 +1,15 @@
 Spider 高效爬虫实践
 ===
 
+演示
+---
+
+- 豆瓣电影 Top 250 爬取并进行结果可视化:
+  - ![](img-show/douban_visual.gif)
+
+- 浏览器下拉行为模拟 + cookie 伪造登录, 爬取知乎动态刷新内容
+  - ![](img-show/zhuhu_browser.gif)
+
 功能
 ---
 - 根据爬取数据特性建 Model 聚集数据, 方便后续高效利用
@@ -10,11 +19,11 @@ Spider 高效爬虫实践
 - cookie 身份验证, 爬取保护内容 
 - 利用 jinja2 渲染出可视化的结果
 
-演示
+使用方法
 ---
-
-- 豆瓣电影 Top 250 爬取并进行结果可视化:
-  - ![](img-show/douban_visual.gif)
-
-- 浏览器下拉行为模拟 + cookie 伪造登录, 爬取知乎动态刷新内容
-  - ![](img-show/zhuhu_browser.gif)
+- 豆瓣 250:
+  - 直接运行程序即可
+- 知乎:
+  1. 补上 serect.py 于根目录, 放自己的知乎 cookie (在浏览器直接复制粘贴即可)
+    - 格式为: cookie = 'k=v;k=v;...'
+  2. 执行
