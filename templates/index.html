@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>visual</title>
+    <style>
+        progress {
+            -webkit-transition: 0.3s all;
+            -moz-transition: 0.3s all;
+            -ms-transition: 0.3s all;
+            transition: 0.3s all;
+        }
+    </style>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        let set_progress = function (id, it, score) {
+            let d = $(id).val()
+            if(d >= score) {
+                clearInterval(it)
+            }
+            $(id).val(d+0.1)
+        }
+    </script>
+</head>
+<body>
+{% for m in movies %}
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/{{ m.ranking }}.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: {{ m.ranking }}</div>
+            <div>电影名: {{ m.name }}</div>
+            <div>一句话: {{ m.quote }}</div>
+            <div>评分: {{ m.score }}</div>
+            <progress id="id-{{ m.ranking }}" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_{{ m.ranking }} = setInterval(function() {
+                    set_progress("#id-{{ m.ranking }}", it_{{ m.ranking }}, {{ m.score }})
+                }, 20)
+            </script>
+        </div>
+    </div>
+{% endfor %}
+</body>
+</html>

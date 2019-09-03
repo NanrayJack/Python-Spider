@@ -1,0 +1,4028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>visual</title>
+    <style>
+        progress {
+            -webkit-transition: 0.3s all;
+            -moz-transition: 0.3s all;
+            -ms-transition: 0.3s all;
+            transition: 0.3s all;
+        }
+    </style>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        let set_progress = function (id, it, score) {
+            let d = $(id).val()
+            if(d >= score) {
+                clearInterval(it)
+            }
+            $(id).val(d+0.1)
+        }
+    </script>
+</head>
+<body>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/1.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 1</div>
+            <div>电影名: 肖申克的救赎 / The Shawshank Redemption</div>
+            <div>一句话: 希望让人自由。</div>
+            <div>评分: 9.7</div>
+            <progress id="id-1" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_1 = setInterval(function() {
+                    set_progress("#id-1", it_1, 9.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/2.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 2</div>
+            <div>电影名: 霸王别姬</div>
+            <div>一句话: 风华绝代。</div>
+            <div>评分: 9.6</div>
+            <progress id="id-2" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_2 = setInterval(function() {
+                    set_progress("#id-2", it_2, 9.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/3.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 3</div>
+            <div>电影名: 阿甘正传 / Forrest Gump</div>
+            <div>一句话: 一部美国近现代史。</div>
+            <div>评分: 9.5</div>
+            <progress id="id-3" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_3 = setInterval(function() {
+                    set_progress("#id-3", it_3, 9.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/4.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 4</div>
+            <div>电影名: 这个杀手不太冷 / Léon</div>
+            <div>一句话: 怪蜀黍和小萝莉不得不说的故事。</div>
+            <div>评分: 9.4</div>
+            <progress id="id-4" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_4 = setInterval(function() {
+                    set_progress("#id-4", it_4, 9.4)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/5.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 5</div>
+            <div>电影名: 美丽人生 / La vita è bella</div>
+            <div>一句话: 最美的谎言。</div>
+            <div>评分: 9.5</div>
+            <progress id="id-5" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_5 = setInterval(function() {
+                    set_progress("#id-5", it_5, 9.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/6.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 6</div>
+            <div>电影名: 泰坦尼克号 / Titanic</div>
+            <div>一句话: 失去的才是永恒的。</div>
+            <div>评分: 9.4</div>
+            <progress id="id-6" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_6 = setInterval(function() {
+                    set_progress("#id-6", it_6, 9.4)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/7.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 7</div>
+            <div>电影名: 千与千寻 / 千と千尋の神隠し</div>
+            <div>一句话: 最好的宫崎骏，最好的久石让。</div>
+            <div>评分: 9.3</div>
+            <progress id="id-7" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_7 = setInterval(function() {
+                    set_progress("#id-7", it_7, 9.3)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/8.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 8</div>
+            <div>电影名: 辛德勒的名单 / Schindler's List</div>
+            <div>一句话: 拯救一个人，就是拯救整个世界。</div>
+            <div>评分: 9.5</div>
+            <progress id="id-8" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_8 = setInterval(function() {
+                    set_progress("#id-8", it_8, 9.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/9.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 9</div>
+            <div>电影名: 盗梦空间 / Inception</div>
+            <div>一句话: 诺兰给了我们一场无法盗取的梦。</div>
+            <div>评分: 9.3</div>
+            <progress id="id-9" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_9 = setInterval(function() {
+                    set_progress("#id-9", it_9, 9.3)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/10.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 10</div>
+            <div>电影名: 忠犬八公的故事 / Hachi: A Dog's Tale</div>
+            <div>一句话: 永远都不能忘记你所爱的人。</div>
+            <div>评分: 9.3</div>
+            <progress id="id-10" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_10 = setInterval(function() {
+                    set_progress("#id-10", it_10, 9.3)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/11.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 11</div>
+            <div>电影名: 机器人总动员 / WALL·E</div>
+            <div>一句话: 小瓦力，大人生。</div>
+            <div>评分: 9.3</div>
+            <progress id="id-11" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_11 = setInterval(function() {
+                    set_progress("#id-11", it_11, 9.3)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/12.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 12</div>
+            <div>电影名: 三傻大闹宝莱坞 / 3 Idiots</div>
+            <div>一句话: 英俊版憨豆，高情商版谢耳朵。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-12" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_12 = setInterval(function() {
+                    set_progress("#id-12", it_12, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/13.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 13</div>
+            <div>电影名: 放牛班的春天 / Les choristes</div>
+            <div>一句话: 天籁一般的童声，是最接近上帝的存在。</div>
+            <div>评分: 9.3</div>
+            <progress id="id-13" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_13 = setInterval(function() {
+                    set_progress("#id-13", it_13, 9.3)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/14.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 14</div>
+            <div>电影名: 海上钢琴师 / La leggenda del pianista sull'oceano</div>
+            <div>一句话: 每个人都要走一条自己坚定了的路，就算是粉身碎骨。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-14" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_14 = setInterval(function() {
+                    set_progress("#id-14", it_14, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/15.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 15</div>
+            <div>电影名: 楚门的世界 / The Truman Show</div>
+            <div>一句话: 如果再也不能见到你，祝你早安，午安，晚安。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-15" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_15 = setInterval(function() {
+                    set_progress("#id-15", it_15, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/16.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 16</div>
+            <div>电影名: 星际穿越 / Interstellar</div>
+            <div>一句话: 爱是一种力量，让我们超越时空感知它的存在。</div>
+            <div>评分: 9.3</div>
+            <progress id="id-16" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_16 = setInterval(function() {
+                    set_progress("#id-16", it_16, 9.3)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/17.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 17</div>
+            <div>电影名: 大话西游之大圣娶亲 / 西遊記大結局之仙履奇緣</div>
+            <div>一句话: 一生所爱。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-17" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_17 = setInterval(function() {
+                    set_progress("#id-17", it_17, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/18.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 18</div>
+            <div>电影名: 龙猫 / となりのトトロ</div>
+            <div>一句话: 人人心中都有个龙猫，童年就永远不会消失。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-18" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_18 = setInterval(function() {
+                    set_progress("#id-18", it_18, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/19.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 19</div>
+            <div>电影名: 熔炉 / 도가니</div>
+            <div>一句话: 我们一路奋战不是为了改变世界，而是为了不让世界改变我们。</div>
+            <div>评分: 9.3</div>
+            <progress id="id-19" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_19 = setInterval(function() {
+                    set_progress("#id-19", it_19, 9.3)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/20.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 20</div>
+            <div>电影名: 教父 / The Godfather</div>
+            <div>一句话: 千万不要记恨你的对手，这样会让你失去理智。</div>
+            <div>评分: 9.3</div>
+            <progress id="id-20" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_20 = setInterval(function() {
+                    set_progress("#id-20", it_20, 9.3)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/21.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 21</div>
+            <div>电影名: 无间道 / 無間道</div>
+            <div>一句话: 香港电影史上永不过时的杰作。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-21" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_21 = setInterval(function() {
+                    set_progress("#id-21", it_21, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/22.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 22</div>
+            <div>电影名: 疯狂动物城 / Zootopia</div>
+            <div>一句话: 迪士尼给我们营造的乌托邦就是这样，永远善良勇敢，永远出乎意料。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-22" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_22 = setInterval(function() {
+                    set_progress("#id-22", it_22, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/23.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 23</div>
+            <div>电影名: 当幸福来敲门 / The Pursuit of Happyness</div>
+            <div>一句话: 平民励志片。</div>
+            <div>评分: 9.1</div>
+            <progress id="id-23" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_23 = setInterval(function() {
+                    set_progress("#id-23", it_23, 9.1)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/24.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 24</div>
+            <div>电影名: 怦然心动 / Flipped</div>
+            <div>一句话: 真正的幸福是来自内心深处。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-24" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_24 = setInterval(function() {
+                    set_progress("#id-24", it_24, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/25.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 25</div>
+            <div>电影名: 触不可及 / Intouchables</div>
+            <div>一句话: 满满温情的高雅喜剧。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-25" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_25 = setInterval(function() {
+                    set_progress("#id-25", it_25, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/26.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 26</div>
+            <div>电影名: 蝙蝠侠：黑暗骑士 / The Dark Knight</div>
+            <div>一句话: 无尽的黑暗。</div>
+            <div>评分: 9.1</div>
+            <progress id="id-26" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_26 = setInterval(function() {
+                    set_progress("#id-26", it_26, 9.1)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/27.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 27</div>
+            <div>电影名: 乱世佳人 / Gone with the Wind</div>
+            <div>一句话: Tomorrow is another day.</div>
+            <div>评分: 9.3</div>
+            <progress id="id-27" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_27 = setInterval(function() {
+                    set_progress("#id-27", it_27, 9.3)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/28.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 28</div>
+            <div>电影名: 活着</div>
+            <div>一句话: 张艺谋最好的电影。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-28" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_28 = setInterval(function() {
+                    set_progress("#id-28", it_28, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/29.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 29</div>
+            <div>电影名: 控方证人 / Witness for the Prosecution</div>
+            <div>一句话: 比利·怀德满分作品。</div>
+            <div>评分: 9.6</div>
+            <progress id="id-29" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_29 = setInterval(function() {
+                    set_progress("#id-29", it_29, 9.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/30.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 30</div>
+            <div>电影名: 少年派的奇幻漂流 / Life of Pi</div>
+            <div>一句话: 瑰丽壮观、无人能及的冒险之旅。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-30" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_30 = setInterval(function() {
+                    set_progress("#id-30", it_30, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/31.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 31</div>
+            <div>电影名: 摔跤吧！爸爸 / Dangal</div>
+            <div>一句话: 你不是在为你一个人战斗，你要让千千万万的女性看到女生并不是只能相夫教子。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-31" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_31 = setInterval(function() {
+                    set_progress("#id-31", it_31, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/32.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 32</div>
+            <div>电影名: 指环王3：王者无敌 / The Lord of the Rings: The Return of the King</div>
+            <div>一句话: 史诗的终章。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-32" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_32 = setInterval(function() {
+                    set_progress("#id-32", it_32, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/33.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 33</div>
+            <div>电影名: 天空之城 / 天空の城ラピュタ</div>
+            <div>一句话: 对天空的追逐，永不停止。</div>
+            <div>评分: 9.1</div>
+            <progress id="id-33" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_33 = setInterval(function() {
+                    set_progress("#id-33", it_33, 9.1)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/34.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 34</div>
+            <div>电影名: 鬼子来了</div>
+            <div>一句话: 对敌人的仁慈，就是对自己残忍。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-34" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_34 = setInterval(function() {
+                    set_progress("#id-34", it_34, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/35.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 35</div>
+            <div>电影名: 十二怒汉 / 12 Angry Men</div>
+            <div>一句话: 1957年的理想主义。</div>
+            <div>评分: 9.4</div>
+            <progress id="id-35" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_35 = setInterval(function() {
+                    set_progress("#id-35", it_35, 9.4)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/36.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 36</div>
+            <div>电影名: 飞屋环游记 / Up</div>
+            <div>一句话: 最后那些最无聊的事情，才是最值得怀念的。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-36" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_36 = setInterval(function() {
+                    set_progress("#id-36", it_36, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/37.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 37</div>
+            <div>电影名: 天堂电影院 / Nuovo Cinema Paradiso</div>
+            <div>一句话: 那些吻戏，那些青春，都在影院的黑暗里被泪水冲刷得无比清晰。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-37" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_37 = setInterval(function() {
+                    set_progress("#id-37", it_37, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/38.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 38</div>
+            <div>电影名: 大话西游之月光宝盒 / 西遊記第壹佰零壹回之月光寶盒</div>
+            <div>一句话: 旷古烁今。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-38" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_38 = setInterval(function() {
+                    set_progress("#id-38", it_38, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/39.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 39</div>
+            <div>电影名: 哈尔的移动城堡 / ハウルの動く城</div>
+            <div>一句话: 带着心爱的人在天空飞翔。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-39" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_39 = setInterval(function() {
+                    set_progress("#id-39", it_39, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/40.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 40</div>
+            <div>电影名: 寻梦环游记 / Coco</div>
+            <div>一句话: 死亡不是真的逝去，遗忘才是永恒的消亡。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-40" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_40 = setInterval(function() {
+                    set_progress("#id-40", it_40, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/41.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 41</div>
+            <div>电影名: 末代皇帝 / The Last Emperor</div>
+            <div>一句话: “不要跟我比惨，我比你更惨”再适合这部电影不过了。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-41" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_41 = setInterval(function() {
+                    set_progress("#id-41", it_41, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/42.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 42</div>
+            <div>电影名: 罗马假日 / Roman Holiday</div>
+            <div>一句话: 爱情哪怕只有一天。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-42" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_42 = setInterval(function() {
+                    set_progress("#id-42", it_42, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/43.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 43</div>
+            <div>电影名: 搏击俱乐部 / Fight Club</div>
+            <div>一句话: 邪恶与平庸蛰伏于同一个母体，在特定的时间互相对峙。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-43" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_43 = setInterval(function() {
+                    set_progress("#id-43", it_43, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/44.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 44</div>
+            <div>电影名: 闻香识女人 / Scent of a Woman</div>
+            <div>一句话: 史上最美的探戈。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-44" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_44 = setInterval(function() {
+                    set_progress("#id-44", it_44, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/45.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 45</div>
+            <div>电影名: 辩护人 / 변호인</div>
+            <div>一句话: 电影的现实意义大过电影本身。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-45" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_45 = setInterval(function() {
+                    set_progress("#id-45", it_45, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/46.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 46</div>
+            <div>电影名: 素媛 / 소원</div>
+            <div>一句话: 受过伤害的人总是笑得最开心，因为他们不愿意让身边的人承受一样的痛苦。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-46" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_46 = setInterval(function() {
+                    set_progress("#id-46", it_46, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/47.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 47</div>
+            <div>电影名: 窃听风暴 / Das Leben der Anderen</div>
+            <div>一句话: 别样人生。</div>
+            <div>评分: 9.1</div>
+            <progress id="id-47" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_47 = setInterval(function() {
+                    set_progress("#id-47", it_47, 9.1)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/48.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 48</div>
+            <div>电影名: 死亡诗社 / Dead Poets Society</div>
+            <div>一句话: 当一个死水般的体制内出现一个活跃的变数时，所有的腐臭都站在了光明的对面。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-48" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_48 = setInterval(function() {
+                    set_progress("#id-48", it_48, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/49.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 49</div>
+            <div>电影名: 两杆大烟枪 / Lock, Stock and Two Smoking Barrels</div>
+            <div>一句话: 4个臭皮匠顶个诸葛亮，盖·里奇果然不是盖的。</div>
+            <div>评分: 9.1</div>
+            <progress id="id-49" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_49 = setInterval(function() {
+                    set_progress("#id-49", it_49, 9.1)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/50.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 50</div>
+            <div>电影名: 飞越疯人院 / One Flew Over the Cuckoo's Nest</div>
+            <div>一句话: 自由万岁。</div>
+            <div>评分: 9.1</div>
+            <progress id="id-50" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_50 = setInterval(function() {
+                    set_progress("#id-50", it_50, 9.1)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/51.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 51</div>
+            <div>电影名: 指环王2：双塔奇兵 / The Lord of the Rings: The Two Towers</div>
+            <div>一句话: 承前启后的史诗篇章。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-51" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_51 = setInterval(function() {
+                    set_progress("#id-51", it_51, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/52.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 52</div>
+            <div>电影名: 教父2 / The Godfather: Part Ⅱ</div>
+            <div>一句话: 优雅的孤独。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-52" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_52 = setInterval(function() {
+                    set_progress("#id-52", it_52, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/53.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 53</div>
+            <div>电影名: 狮子王 / The Lion King</div>
+            <div>一句话: 动物版《哈姆雷特》。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-53" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_53 = setInterval(function() {
+                    set_progress("#id-53", it_53, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/54.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 54</div>
+            <div>电影名: 指环王1：魔戒再现 / The Lord of the Rings: The Fellowship of the Ring</div>
+            <div>一句话: 传说的开始。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-54" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_54 = setInterval(function() {
+                    set_progress("#id-54", it_54, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/55.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 55</div>
+            <div>电影名: V字仇杀队 / V for Vendetta</div>
+            <div>一句话: 一张面具背后的理想与革命。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-55" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_55 = setInterval(function() {
+                    set_progress("#id-55", it_55, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/56.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 56</div>
+            <div>电影名: 何以为家 / كفرناحوم</div>
+            <div>一句话: 凝视卑弱生命，用电影改变命运。</div>
+            <div>评分: 9.1</div>
+            <progress id="id-56" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_56 = setInterval(function() {
+                    set_progress("#id-56", it_56, 9.1)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/57.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 57</div>
+            <div>电影名: 美丽心灵 / A Beautiful Mind</div>
+            <div>一句话: 爱是一切逻辑和原由。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-57" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_57 = setInterval(function() {
+                    set_progress("#id-57", it_57, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/58.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 58</div>
+            <div>电影名: 饮食男女 / 飲食男女</div>
+            <div>一句话: 人生不能像做菜，把所有的料都准备好了才下锅。</div>
+            <div>评分: 9.1</div>
+            <progress id="id-58" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_58 = setInterval(function() {
+                    set_progress("#id-58", it_58, 9.1)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/59.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 59</div>
+            <div>电影名: 海豚湾 / The Cove</div>
+            <div>一句话: 海豚的微笑，是世界上最高明的伪装。</div>
+            <div>评分: 9.3</div>
+            <progress id="id-59" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_59 = setInterval(function() {
+                    set_progress("#id-59", it_59, 9.3)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/60.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 60</div>
+            <div>电影名: 大闹天宫</div>
+            <div>一句话: 经典之作，历久弥新。</div>
+            <div>评分: 9.3</div>
+            <progress id="id-60" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_60 = setInterval(function() {
+                    set_progress("#id-60", it_60, 9.3)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/61.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 61</div>
+            <div>电影名: 情书 / Love Letter</div>
+            <div>一句话: 暗恋的极致。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-61" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_61 = setInterval(function() {
+                    set_progress("#id-61", it_61, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/62.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 62</div>
+            <div>电影名: 钢琴家 / The Pianist</div>
+            <div>一句话: 音乐能化解仇恨。</div>
+            <div>评分: 9.1</div>
+            <progress id="id-62" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_62 = setInterval(function() {
+                    set_progress("#id-62", it_62, 9.1)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/63.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 63</div>
+            <div>电影名: 哈利·波特与魔法石 / Harry Potter and the Sorcerer's Stone</div>
+            <div>一句话: 童话世界的开端。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-63" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_63 = setInterval(function() {
+                    set_progress("#id-63", it_63, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/64.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 64</div>
+            <div>电影名: 本杰明·巴顿奇事 / The Curious Case of Benjamin Button</div>
+            <div>一句话: 在时间之河里感受溺水之苦。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-64" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_64 = setInterval(function() {
+                    set_progress("#id-64", it_64, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/65.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 65</div>
+            <div>电影名: 看不见的客人 / Contratiempo</div>
+            <div>一句话: 你以为你以为的就是你以为的。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-65" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_65 = setInterval(function() {
+                    set_progress("#id-65", it_65, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/66.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 66</div>
+            <div>电影名: 黑客帝国 / The Matrix</div>
+            <div>一句话: 视觉革命。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-66" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_66 = setInterval(function() {
+                    set_progress("#id-66", it_66, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/67.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 67</div>
+            <div>电影名: 西西里的美丽传说 / Malèna</div>
+            <div>一句话: 美丽无罪。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-67" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_67 = setInterval(function() {
+                    set_progress("#id-67", it_67, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/68.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 68</div>
+            <div>电影名: 小鞋子 / بچههای آسمان</div>
+            <div>一句话: 奔跑的孩子是天使。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-68" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_68 = setInterval(function() {
+                    set_progress("#id-68", it_68, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/69.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 69</div>
+            <div>电影名: 让子弹飞</div>
+            <div>一句话: 你给我翻译翻译，神马叫做TMD的惊喜。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-69" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_69 = setInterval(function() {
+                    set_progress("#id-69", it_69, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/70.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 70</div>
+            <div>电影名: 美国往事 / Once Upon a Time in America</div>
+            <div>一句话: 往事如烟，无处祭奠。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-70" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_70 = setInterval(function() {
+                    set_progress("#id-70", it_70, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/71.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 71</div>
+            <div>电影名: 拯救大兵瑞恩 / Saving Private Ryan</div>
+            <div>一句话: 美利坚精神输出大片No1.</div>
+            <div>评分: 9.0</div>
+            <progress id="id-71" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_71 = setInterval(function() {
+                    set_progress("#id-71", it_71, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/72.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 72</div>
+            <div>电影名: 猫鼠游戏 / Catch Me If You Can</div>
+            <div>一句话: 骗子大师和执著警探的你追我跑故事。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-72" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_72 = setInterval(function() {
+                    set_progress("#id-72", it_72, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/73.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 73</div>
+            <div>电影名: 音乐之声 / The Sound of Music</div>
+            <div>一句话: 用音乐化解仇恨，让歌声串起美好。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-73" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_73 = setInterval(function() {
+                    set_progress("#id-73", it_73, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/74.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 74</div>
+            <div>电影名: 致命魔术 / The Prestige</div>
+            <div>一句话: 孪生蝙蝠侠大战克隆金刚狼。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-74" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_74 = setInterval(function() {
+                    set_progress("#id-74", it_74, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/75.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 75</div>
+            <div>电影名: 七宗罪 / Se7en</div>
+            <div>一句话: 警察抓小偷，老鼠玩死猫。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-75" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_75 = setInterval(function() {
+                    set_progress("#id-75", it_75, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/76.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 76</div>
+            <div>电影名: 被嫌弃的松子的一生 / 嫌われ松子の一生</div>
+            <div>一句话: 以戏谑来戏谑戏谑。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-76" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_76 = setInterval(function() {
+                    set_progress("#id-76", it_76, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/77.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 77</div>
+            <div>电影名: 低俗小说 / Pulp Fiction</div>
+            <div>一句话: 故事的高级讲法。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-77" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_77 = setInterval(function() {
+                    set_progress("#id-77", it_77, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/78.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 78</div>
+            <div>电影名: 沉默的羔羊 / The Silence of the Lambs</div>
+            <div>一句话: 安东尼·霍普金斯的顶级表演。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-78" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_78 = setInterval(function() {
+                    set_progress("#id-78", it_78, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/79.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 79</div>
+            <div>电影名: 蝴蝶效应 / The Butterfly Effect</div>
+            <div>一句话: 人的命运被自己瞬间的抉择改变。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-79" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_79 = setInterval(function() {
+                    set_progress("#id-79", it_79, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/80.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 80</div>
+            <div>电影名: 穿条纹睡衣的男孩 / The Boy in the Striped Pajamas</div>
+            <div>一句话: 尽管有些不切实际的幻想，这部电影依旧是一部感人肺腑的佳作。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-80" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_80 = setInterval(function() {
+                    set_progress("#id-80", it_80, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/81.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 81</div>
+            <div>电影名: 春光乍泄 / 春光乍洩</div>
+            <div>一句话: 爱情纠缠，男女一致。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-81" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_81 = setInterval(function() {
+                    set_progress("#id-81", it_81, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/82.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 82</div>
+            <div>电影名: 勇敢的心 / Braveheart</div>
+            <div>一句话: 史诗大片的典范。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-82" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_82 = setInterval(function() {
+                    set_progress("#id-82", it_82, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/83.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 83</div>
+            <div>电影名: 天使爱美丽 / Le fabuleux destin d'Amélie Poulain</div>
+            <div>一句话: 法式小清新。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-83" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_83 = setInterval(function() {
+                    set_progress("#id-83", it_83, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/84.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 84</div>
+            <div>电影名: 剪刀手爱德华 / Edward Scissorhands</div>
+            <div>一句话: 浪漫忧郁的成人童话。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-84" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_84 = setInterval(function() {
+                    set_progress("#id-84", it_84, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/85.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 85</div>
+            <div>电影名: 心灵捕手 / Good Will Hunting</div>
+            <div>一句话: 人生中应该拥有这样的一段豁然开朗。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-85" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_85 = setInterval(function() {
+                    set_progress("#id-85", it_85, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/86.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 86</div>
+            <div>电影名: 禁闭岛 / Shutter Island</div>
+            <div>一句话: 昔日翩翩少年，今日大腹便便。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-86" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_86 = setInterval(function() {
+                    set_progress("#id-86", it_86, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/87.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 87</div>
+            <div>电影名: 布达佩斯大饭店 / The Grand Budapest Hotel</div>
+            <div>一句话: 小清新的故事里注入了大历史的情怀。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-87" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_87 = setInterval(function() {
+                    set_progress("#id-87", it_87, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/88.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 88</div>
+            <div>电影名: 阿凡达 / Avatar</div>
+            <div>一句话: 绝对意义上的美轮美奂。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-88" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_88 = setInterval(function() {
+                    set_progress("#id-88", it_88, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/89.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 89</div>
+            <div>电影名: 入殓师 / おくりびと</div>
+            <div>一句话: 死可能是一道门，逝去并不是终结，而是超越，走向下一程。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-89" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_89 = setInterval(function() {
+                    set_progress("#id-89", it_89, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/90.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 90</div>
+            <div>电影名: 幽灵公主 / もののけ姫</div>
+            <div>一句话: 人与自然的战争史诗。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-90" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_90 = setInterval(function() {
+                    set_progress("#id-90", it_90, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/91.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 91</div>
+            <div>电影名: 加勒比海盗 / Pirates of the Caribbean: The Curse of the Black Pearl</div>
+            <div>一句话: 约翰尼·德普的独角戏。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-91" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_91 = setInterval(function() {
+                    set_progress("#id-91", it_91, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/92.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 92</div>
+            <div>电影名: 摩登时代 / Modern Times</div>
+            <div>一句话: 大时代中的人生，小人物的悲喜。</div>
+            <div>评分: 9.3</div>
+            <progress id="id-92" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_92 = setInterval(function() {
+                    set_progress("#id-92", it_92, 9.3)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/93.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 93</div>
+            <div>电影名: 致命ID / Identity</div>
+            <div>一句话: 最不可能的那个人永远是最可能的。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-93" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_93 = setInterval(function() {
+                    set_progress("#id-93", it_93, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/94.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 94</div>
+            <div>电影名: 断背山 / Brokeback Mountain</div>
+            <div>一句话: 每个人心中都有一座断背山。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-94" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_94 = setInterval(function() {
+                    set_progress("#id-94", it_94, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/95.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 95</div>
+            <div>电影名: 我不是药神</div>
+            <div>一句话: </div>
+            <div>评分: 9.0</div>
+            <progress id="id-95" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_95 = setInterval(function() {
+                    set_progress("#id-95", it_95, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/96.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 96</div>
+            <div>电影名: 阳光灿烂的日子</div>
+            <div>一句话: 一场华丽的意淫。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-96" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_96 = setInterval(function() {
+                    set_progress("#id-96", it_96, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/97.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 97</div>
+            <div>电影名: 重庆森林 / 重慶森林</div>
+            <div>一句话: 寂寞没有期限。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-97" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_97 = setInterval(function() {
+                    set_progress("#id-97", it_97, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/98.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 98</div>
+            <div>电影名: 第六感 / The Sixth Sense</div>
+            <div>一句话: 深入内心的恐怖，出人意料的结局。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-98" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_98 = setInterval(function() {
+                    set_progress("#id-98", it_98, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/99.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 99</div>
+            <div>电影名: 狩猎 / Jagten</div>
+            <div>一句话: 人言可畏。</div>
+            <div>评分: 9.1</div>
+            <progress id="id-99" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_99 = setInterval(function() {
+                    set_progress("#id-99", it_99, 9.1)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/100.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 100</div>
+            <div>电影名: 喜剧之王 / 喜劇之王</div>
+            <div>一句话: 我是一个演员。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-100" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_100 = setInterval(function() {
+                    set_progress("#id-100", it_100, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/101.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 101</div>
+            <div>电影名: 玛丽和马克思 / Mary and Max</div>
+            <div>一句话: 你是我最好的朋友，你是我唯一的朋友 。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-101" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_101 = setInterval(function() {
+                    set_progress("#id-101", it_101, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/102.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 102</div>
+            <div>电影名: 消失的爱人 / Gone Girl</div>
+            <div>一句话: 年度最佳date movie。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-102" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_102 = setInterval(function() {
+                    set_progress("#id-102", it_102, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/103.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 103</div>
+            <div>电影名: 告白</div>
+            <div>一句话: 没有一人完全善，也没有一人完全恶。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-103" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_103 = setInterval(function() {
+                    set_progress("#id-103", it_103, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/104.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 104</div>
+            <div>电影名: 小森林 夏秋篇 / リトル・フォレスト 夏・秋</div>
+            <div>一句话: 那些静得只能听见呼吸的日子里，你明白孤独即生活。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-104" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_104 = setInterval(function() {
+                    set_progress("#id-104", it_104, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/105.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 105</div>
+            <div>电影名: 大鱼 / Big Fish</div>
+            <div>一句话: 抱着梦想而活着的人是幸福的，怀抱梦想而死去的人是不朽的。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-105" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_105 = setInterval(function() {
+                    set_progress("#id-105", it_105, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/106.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 106</div>
+            <div>电影名: 请以你的名字呼唤我 / Call Me by Your Name</div>
+            <div>一句话: 沉醉在电影的情感和视听氛围中无法自拔。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-106" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_106 = setInterval(function() {
+                    set_progress("#id-106", it_106, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/107.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 107</div>
+            <div>电影名: 一一</div>
+            <div>一句话: 我们都曾经是一一。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-107" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_107 = setInterval(function() {
+                    set_progress("#id-107", it_107, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/108.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 108</div>
+            <div>电影名: 爱在黎明破晓前 / Before Sunrise</div>
+            <div>一句话: 缘分是个连绵词，最美不过一瞬。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-108" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_108 = setInterval(function() {
+                    set_progress("#id-108", it_108, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/109.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 109</div>
+            <div>电影名: 阳光姐妹淘 / 써니</div>
+            <div>一句话: 再多各自牛逼的时光，也比不上一起傻逼的岁月。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-109" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_109 = setInterval(function() {
+                    set_progress("#id-109", it_109, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/110.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 110</div>
+            <div>电影名: 射雕英雄传之东成西就 / 射鵰英雄傳之東成西就</div>
+            <div>一句话: 百看不厌。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-110" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_110 = setInterval(function() {
+                    set_progress("#id-110", it_110, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/111.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 111</div>
+            <div>电影名: 侧耳倾听 / 耳をすませば</div>
+            <div>一句话: 少女情怀总是诗。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-111" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_111 = setInterval(function() {
+                    set_progress("#id-111", it_111, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/112.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 112</div>
+            <div>电影名: 甜蜜蜜</div>
+            <div>一句话: 相逢只要一瞬间，等待却像是一辈子。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-112" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_112 = setInterval(function() {
+                    set_progress("#id-112", it_112, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/113.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 113</div>
+            <div>电影名: 海蒂和爷爷 / Heidi</div>
+            <div>一句话: 如果生活中有什么使你感到快乐，那就去做吧！不要管别人说什么。</div>
+            <div>评分: 9.1</div>
+            <progress id="id-113" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_113 = setInterval(function() {
+                    set_progress("#id-113", it_113, 9.1)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/114.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 114</div>
+            <div>电影名: 红辣椒 / パプリカ</div>
+            <div>一句话: 梦的勾结。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-114" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_114 = setInterval(function() {
+                    set_progress("#id-114", it_114, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/115.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 115</div>
+            <div>电影名: 杀人回忆 / 살인의 추억</div>
+            <div>一句话: 关于连环杀人悬案的集体回忆。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-115" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_115 = setInterval(function() {
+                    set_progress("#id-115", it_115, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/116.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 116</div>
+            <div>电影名: 驯龙高手 / How to Train Your Dragon</div>
+            <div>一句话: 和谐的生活离不开摸头与被摸头。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-116" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_116 = setInterval(function() {
+                    set_progress("#id-116", it_116, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/117.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 117</div>
+            <div>电影名: 倩女幽魂</div>
+            <div>一句话: 两张绝世的脸。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-117" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_117 = setInterval(function() {
+                    set_progress("#id-117", it_117, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/118.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 118</div>
+            <div>电影名: 7号房的礼物 / 7번방의 선물</div>
+            <div>一句话: 《我是山姆》的《美丽人生》。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-118" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_118 = setInterval(function() {
+                    set_progress("#id-118", it_118, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/119.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 119</div>
+            <div>电影名: 超脱 / Detachment</div>
+            <div>一句话: 穷尽一生，我们要学会的，不过是彼此拥抱。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-119" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_119 = setInterval(function() {
+                    set_progress("#id-119", it_119, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/120.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 120</div>
+            <div>电影名: 恐怖直播 / 더 테러 라이브</div>
+            <div>一句话: 恐怖分子的“秋菊打官司”。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-120" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_120 = setInterval(function() {
+                    set_progress("#id-120", it_120, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/121.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 121</div>
+            <div>电影名: 哈利·波特与死亡圣器(下) / Harry Potter and the Deathly Hallows: Part 2</div>
+            <div>一句话: 10年的完美句点。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-121" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_121 = setInterval(function() {
+                    set_progress("#id-121", it_121, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/122.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 122</div>
+            <div>电影名: 小森林 冬春篇 / リトル・フォレスト 冬・春</div>
+            <div>一句话: 尊敬他人，尊敬你生活的这片土地，明白孤独是人生的常态。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-122" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_122 = setInterval(function() {
+                    set_progress("#id-122", it_122, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/123.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 123</div>
+            <div>电影名: 菊次郎的夏天 / 菊次郎の夏</div>
+            <div>一句话: 从没见过那么流氓的温柔，从没见过那么温柔的流氓。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-123" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_123 = setInterval(function() {
+                    set_progress("#id-123", it_123, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/124.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 124</div>
+            <div>电影名: 爱在日落黄昏时 / Before Sunset</div>
+            <div>一句话: 九年后的重逢是世俗和责任的交叠，没了悸动和青涩，沧桑而温暖。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-124" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_124 = setInterval(function() {
+                    set_progress("#id-124", it_124, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/125.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 125</div>
+            <div>电影名: 风之谷 / 風の谷のナウシカ</div>
+            <div>一句话: 动画片的圣经。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-125" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_125 = setInterval(function() {
+                    set_progress("#id-125", it_125, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/126.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 126</div>
+            <div>电影名: 蝙蝠侠：黑暗骑士崛起 / The Dark Knight Rises</div>
+            <div>一句话: 诺兰就是保证。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-126" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_126 = setInterval(function() {
+                    set_progress("#id-126", it_126, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/127.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 127</div>
+            <div>电影名: 幸福终点站 / The Terminal</div>
+            <div>一句话: 有时候幸福需要等一等。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-127" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_127 = setInterval(function() {
+                    set_progress("#id-127", it_127, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/128.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 128</div>
+            <div>电影名: 萤火之森 / 蛍火の杜へ</div>
+            <div>一句话: 触不到的恋人。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-128" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_128 = setInterval(function() {
+                    set_progress("#id-128", it_128, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/129.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 129</div>
+            <div>电影名: 唐伯虎点秋香 / 唐伯虎點秋香</div>
+            <div>一句话: 华太师是黄霑，吴镇宇四大才子之一。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-129" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_129 = setInterval(function() {
+                    set_progress("#id-129", it_129, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/130.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 130</div>
+            <div>电影名: 借东西的小人阿莉埃蒂 / 借りぐらしのアリエッティ</div>
+            <div>一句话: 曾经的那段美好会沉淀为一辈子的记忆。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-130" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_130 = setInterval(function() {
+                    set_progress("#id-130", it_130, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/131.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 131</div>
+            <div>电影名: 超能陆战队 / Big Hero 6</div>
+            <div>一句话: Balalala~~~</div>
+            <div>评分: 8.6</div>
+            <progress id="id-131" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_131 = setInterval(function() {
+                    set_progress("#id-131", it_131, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/132.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 132</div>
+            <div>电影名: 上帝之城 / Cidade de Deus</div>
+            <div>一句话: 被上帝抛弃了的上帝之城。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-132" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_132 = setInterval(function() {
+                    set_progress("#id-132", it_132, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/133.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 133</div>
+            <div>电影名: 神偷奶爸 / Despicable Me</div>
+            <div>一句话: Mr. I Don't Care其实也有Care的时候。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-133" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_133 = setInterval(function() {
+                    set_progress("#id-133", it_133, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/134.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 134</div>
+            <div>电影名: 无人知晓 / 誰も知らない</div>
+            <div>一句话: 我的平常生活就是他人的幸福。</div>
+            <div>评分: 9.1</div>
+            <progress id="id-134" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_134 = setInterval(function() {
+                    set_progress("#id-134", it_134, 9.1)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/135.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 135</div>
+            <div>电影名: 怪兽电力公司 / Monsters, Inc.</div>
+            <div>一句话: 不要给它起名字，起了名字就有感情了。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-135" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_135 = setInterval(function() {
+                    set_progress("#id-135", it_135, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/136.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 136</div>
+            <div>电影名: 玩具总动员3 / Toy Story 3</div>
+            <div>一句话: 跨度十五年的欢乐与泪水。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-136" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_136 = setInterval(function() {
+                    set_progress("#id-136", it_136, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/137.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 137</div>
+            <div>电影名: 电锯惊魂 / Saw</div>
+            <div>一句话: 真相就在眼前。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-137" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_137 = setInterval(function() {
+                    set_progress("#id-137", it_137, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/138.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 138</div>
+            <div>电影名: 岁月神偷 / 歲月神偷</div>
+            <div>一句话: 岁月流逝，来日可追。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-138" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_138 = setInterval(function() {
+                    set_progress("#id-138", it_138, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/139.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 139</div>
+            <div>电影名: 血战钢锯岭 / Hacksaw Ridge</div>
+            <div>一句话: 优秀的战争片不会美化战场，不会粉饰死亡，不会矮化敌人，不会无视常识，最重要的，不会宣扬战争。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-139" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_139 = setInterval(function() {
+                    set_progress("#id-139", it_139, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/140.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 140</div>
+            <div>电影名: 谍影重重3 / The Bourne Ultimatum</div>
+            <div>一句话: 像吃了苏打饼一样干脆的电影。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-140" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_140 = setInterval(function() {
+                    set_progress("#id-140", it_140, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/141.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 141</div>
+            <div>电影名: 疯狂原始人 / The Croods</div>
+            <div>一句话: 老少皆宜，这就是好莱坞动画的魅力。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-141" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_141 = setInterval(function() {
+                    set_progress("#id-141", it_141, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/142.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 142</div>
+            <div>电影名: 英雄本色</div>
+            <div>一句话: 英雄泪短，兄弟情长。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-142" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_142 = setInterval(function() {
+                    set_progress("#id-142", it_142, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/143.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 143</div>
+            <div>电影名: 喜宴 / 囍宴</div>
+            <div>一句话: 中国家庭的喜怒哀乐忍。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-143" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_143 = setInterval(function() {
+                    set_progress("#id-143", it_143, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/144.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 144</div>
+            <div>电影名: 七武士 / 七人の侍</div>
+            <div>一句话: 时代悲歌。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-144" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_144 = setInterval(function() {
+                    set_progress("#id-144", it_144, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/145.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 145</div>
+            <div>电影名: 傲慢与偏见 / Pride & Prejudice</div>
+            <div>一句话: 爱是摈弃傲慢与偏见之后的曙光。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-145" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_145 = setInterval(function() {
+                    set_progress("#id-145", it_145, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/146.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 146</div>
+            <div>电影名: 萤火虫之墓 / 火垂るの墓</div>
+            <div>一句话: 幸福是生生不息，却难以触及的远。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-146" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_146 = setInterval(function() {
+                    set_progress("#id-146", it_146, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/147.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 147</div>
+            <div>电影名: 东邪西毒 / 東邪西毒</div>
+            <div>一句话: 电影诗。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-147" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_147 = setInterval(function() {
+                    set_progress("#id-147", it_147, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/148.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 148</div>
+            <div>电影名: 时空恋旅人 / About Time</div>
+            <div>一句话: 把每天当作最后一天般珍惜度过，积极拥抱生活，就是幸福。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-148" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_148 = setInterval(function() {
+                    set_progress("#id-148", it_148, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/149.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 149</div>
+            <div>电影名: 真爱至上 / Love Actually</div>
+            <div>一句话: 爱，是个动词。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-149" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_149 = setInterval(function() {
+                    set_progress("#id-149", it_149, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/150.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 150</div>
+            <div>电影名: 贫民窟的百万富翁 / Slumdog Millionaire</div>
+            <div>一句话: 上帝之城+猜火车+阿甘正传+开心辞典=山寨富翁</div>
+            <div>评分: 8.6</div>
+            <progress id="id-150" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_150 = setInterval(function() {
+                    set_progress("#id-150", it_150, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/151.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 151</div>
+            <div>电影名: 黑天鹅 / Black Swan</div>
+            <div>一句话: 黑暗之美。</div>
+            <div>评分: 8.5</div>
+            <progress id="id-151" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_151 = setInterval(function() {
+                    set_progress("#id-151", it_151, 8.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/152.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 152</div>
+            <div>电影名: 记忆碎片 / Memento</div>
+            <div>一句话: 一个针管引发的血案。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-152" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_152 = setInterval(function() {
+                    set_progress("#id-152", it_152, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/153.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 153</div>
+            <div>电影名: 心迷宫</div>
+            <div>一句话: 荒诞讽刺，千奇百巧，抽丝剥茧，百转千回。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-153" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_153 = setInterval(function() {
+                    set_progress("#id-153", it_153, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/154.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 154</div>
+            <div>电影名: 纵横四海 / 緃横四海</div>
+            <div>一句话: 香港浪漫主义警匪动作片的巅峰之作。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-154" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_154 = setInterval(function() {
+                    set_progress("#id-154", it_154, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/155.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 155</div>
+            <div>电影名: 教父3 / The Godfather: Part III</div>
+            <div>一句话: 任何信念的力量，都无法改变命运。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-155" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_155 = setInterval(function() {
+                    set_progress("#id-155", it_155, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/156.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 156</div>
+            <div>电影名: 完美的世界 / A Perfect World</div>
+            <div>一句话: 坏人的好总是比好人的好来得更感人。</div>
+            <div>评分: 9.1</div>
+            <progress id="id-156" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_156 = setInterval(function() {
+                    set_progress("#id-156", it_156, 9.1)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/157.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 157</div>
+            <div>电影名: 荒蛮故事 / Relatos salvajes</div>
+            <div>一句话: 始于荒诞，止于更荒诞。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-157" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_157 = setInterval(function() {
+                    set_progress("#id-157", it_157, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/158.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 158</div>
+            <div>电影名: 达拉斯买家俱乐部 / Dallas Buyers Club</div>
+            <div>一句话: Jared Leto的腿比女人还美！</div>
+            <div>评分: 8.7</div>
+            <progress id="id-158" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_158 = setInterval(function() {
+                    set_progress("#id-158", it_158, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/159.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 159</div>
+            <div>电影名: 三块广告牌 / Three Billboards Outside Ebbing, Missouri</div>
+            <div>一句话: 怼天怼地，你走后，她与世界为敌。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-159" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_159 = setInterval(function() {
+                    set_progress("#id-159", it_159, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/160.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 160</div>
+            <div>电影名: 被解救的姜戈 / Django Unchained</div>
+            <div>一句话: 热血沸腾，那个低俗、性感的无耻混蛋又来了。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-160" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_160 = setInterval(function() {
+                    set_progress("#id-160", it_160, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/161.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 161</div>
+            <div>电影名: 雨人 / Rain Man</div>
+            <div>一句话: 生活在自己的世界里，也可以让周围的人显得可笑和渺小。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-161" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_161 = setInterval(function() {
+                    set_progress("#id-161", it_161, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/162.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 162</div>
+            <div>电影名: 花样年华 / 花樣年華</div>
+            <div>一句话: 偷情本没有这样美。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-162" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_162 = setInterval(function() {
+                    set_progress("#id-162", it_162, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/163.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 163</div>
+            <div>电影名: 我是山姆 / I Am Sam</div>
+            <div>一句话: 爱并不需要智商 。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-163" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_163 = setInterval(function() {
+                    set_progress("#id-163", it_163, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/164.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 164</div>
+            <div>电影名: 你的名字。 / 君の名は。</div>
+            <div>一句话: 穿越错位的时空，仰望陨落的星辰，你没留下你的名字，我却无法忘记那句“我爱你”。</div>
+            <div>评分: 8.4</div>
+            <progress id="id-164" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_164 = setInterval(function() {
+                    set_progress("#id-164", it_164, 8.4)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/165.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 165</div>
+            <div>电影名: 卢旺达饭店 / Hotel Rwanda</div>
+            <div>一句话: 当这个世界闭上双眼，他却敞开了怀抱。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-165" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_165 = setInterval(function() {
+                    set_progress("#id-165", it_165, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/166.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 166</div>
+            <div>电影名: 哪吒闹海</div>
+            <div>一句话: 想你时你在闹海。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-166" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_166 = setInterval(function() {
+                    set_progress("#id-166", it_166, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/167.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 167</div>
+            <div>电影名: 头脑特工队 / Inside Out</div>
+            <div>一句话: 愿我们都不用长大，每一座城堡都能永远存在。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-167" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_167 = setInterval(function() {
+                    set_progress("#id-167", it_167, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/168.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 168</div>
+            <div>电影名: 海边的曼彻斯特 / Manchester by the Sea</div>
+            <div>一句话: 我们都有权利不与自己的过去和解。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-168" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_168 = setInterval(function() {
+                    set_progress("#id-168", it_168, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/169.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 169</div>
+            <div>电影名: 你看起来好像很好吃 / おまえうまそうだな</div>
+            <div>一句话: 感情不分食草或者食肉。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-169" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_169 = setInterval(function() {
+                    set_progress("#id-169", it_169, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/170.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 170</div>
+            <div>电影名: 恋恋笔记本 / The Notebook</div>
+            <div>一句话: 爱情没有那么多借口，如果不能圆满，只能说明爱的不够。</div>
+            <div>评分: 8.5</div>
+            <progress id="id-170" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_170 = setInterval(function() {
+                    set_progress("#id-170", it_170, 8.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/171.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 171</div>
+            <div>电影名: 无敌破坏王 / Wreck-It Ralph</div>
+            <div>一句话: 迪士尼和皮克斯拿错剧本的产物。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-171" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_171 = setInterval(function() {
+                    set_progress("#id-171", it_171, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/172.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 172</div>
+            <div>电影名: 二十二</div>
+            <div>一句话: 有一些东西不应该被遗忘。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-172" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_172 = setInterval(function() {
+                    set_progress("#id-172", it_172, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/173.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 173</div>
+            <div>电影名: 冰川时代 / Ice Age</div>
+            <div>一句话: 松鼠才是角儿。</div>
+            <div>评分: 8.5</div>
+            <progress id="id-173" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_173 = setInterval(function() {
+                    set_progress("#id-173", it_173, 8.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/174.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 174</div>
+            <div>电影名: 虎口脱险 / La grande vadrouille</div>
+            <div>一句话: 永远看不腻的喜剧。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-174" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_174 = setInterval(function() {
+                    set_progress("#id-174", it_174, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/175.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 175</div>
+            <div>电影名: 未麻的部屋 / Perfect Blue</div>
+            <div>一句话: 好的剧本是，就算你猜到了结局也猜不到全部。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-175" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_175 = setInterval(function() {
+                    set_progress("#id-175", it_175, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/176.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 176</div>
+            <div>电影名: 模仿游戏 / The Imitation Game</div>
+            <div>一句话: 他给机器起名“克里斯托弗”，因为这是他初恋的名字。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-176" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_176 = setInterval(function() {
+                    set_progress("#id-176", it_176, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/177.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 177</div>
+            <div>电影名: 爆裂鼓手 / Whiplash</div>
+            <div>一句话: 这个世界从不善待努力的人，努力了也不一定会成功，但是知道自己在努力，就是活下去的动力。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-177" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_177 = setInterval(function() {
+                    set_progress("#id-177", it_177, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/178.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 178</div>
+            <div>电影名: 海洋 / Océans</div>
+            <div>一句话: 大海啊，不全是水。</div>
+            <div>评分: 9.1</div>
+            <progress id="id-178" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_178 = setInterval(function() {
+                    set_progress("#id-178", it_178, 9.1)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/179.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 179</div>
+            <div>电影名: 雨中曲 / Singin' in the Rain</div>
+            <div>一句话: 骨灰级歌舞片。</div>
+            <div>评分: 9.0</div>
+            <progress id="id-179" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_179 = setInterval(function() {
+                    set_progress("#id-179", it_179, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/180.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 180</div>
+            <div>电影名: 一个叫欧维的男人决定去死 / En man som heter Ove</div>
+            <div>一句话: 惠及一生的美丽。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-180" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_180 = setInterval(function() {
+                    set_progress("#id-180", it_180, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/181.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 181</div>
+            <div>电影名: 忠犬八公物语 / ハチ公物語</div>
+            <div>一句话: 养狗三日，便会对你终其一生。</div>
+            <div>评分: 9.1</div>
+            <progress id="id-181" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_181 = setInterval(function() {
+                    set_progress("#id-181", it_181, 9.1)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/182.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 182</div>
+            <div>电影名: 天书奇谭</div>
+            <div>一句话: 传奇的年代，醉人的童话。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-182" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_182 = setInterval(function() {
+                    set_progress("#id-182", it_182, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/183.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 183</div>
+            <div>电影名: 燃情岁月 / Legends of the Fall</div>
+            <div>一句话: 传奇，不是每个人都可以拥有。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-183" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_183 = setInterval(function() {
+                    set_progress("#id-183", it_183, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/184.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 184</div>
+            <div>电影名: 人工智能 / Artificial Intelligence: AI</div>
+            <div>一句话: 对爱的执着，可以超越一切。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-184" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_184 = setInterval(function() {
+                    set_progress("#id-184", it_184, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/185.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 185</div>
+            <div>电影名: 魔女宅急便 / 魔女の宅急便</div>
+            <div>一句话: 宫崎骏的电影总让人感觉世界是美好的，阳光明媚的。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-185" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_185 = setInterval(function() {
+                    set_progress("#id-185", it_185, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/186.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 186</div>
+            <div>电影名: 房间 / Room</div>
+            <div>一句话: 被偷走的岁月，被伤害的生命，被禁锢的灵魂，终将被希望和善意救赎。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-186" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_186 = setInterval(function() {
+                    set_progress("#id-186", it_186, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/187.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 187</div>
+            <div>电影名: 穿越时空的少女 / 時をかける少女</div>
+            <div>一句话: 爱上未来的你。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-187" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_187 = setInterval(function() {
+                    set_progress("#id-187", it_187, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/188.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 188</div>
+            <div>电影名: 黑客帝国3：矩阵革命 / The Matrix Revolutions</div>
+            <div>一句话: 不得不说，《黑客帝国》系列是商业片与科幻、哲学完美结合的典范。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-188" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_188 = setInterval(function() {
+                    set_progress("#id-188", it_188, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/189.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 189</div>
+            <div>电影名: 头号玩家 / Ready Player One</div>
+            <div>一句话: 写给影迷，动漫迷和游戏迷的一封情书。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-189" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_189 = setInterval(function() {
+                    set_progress("#id-189", it_189, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/190.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 190</div>
+            <div>电影名: 海街日记 / 海街diary</div>
+            <div>一句话: 是枝裕和的家庭习作。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-190" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_190 = setInterval(function() {
+                    set_progress("#id-190", it_190, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/191.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 191</div>
+            <div>电影名: 恐怖游轮 / Triangle</div>
+            <div>一句话: 不要企图在重复中寻找已经失去的爱。</div>
+            <div>评分: 8.4</div>
+            <progress id="id-191" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_191 = setInterval(function() {
+                    set_progress("#id-191", it_191, 8.4)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/192.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 192</div>
+            <div>电影名: 魂断蓝桥 / Waterloo Bridge</div>
+            <div>一句话: 中国式内在的美国电影。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-192" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_192 = setInterval(function() {
+                    set_progress("#id-192", it_192, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/193.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 193</div>
+            <div>电影名: 猜火车 / Trainspotting</div>
+            <div>一句话: 不可猜的青春迷笛。</div>
+            <div>评分: 8.5</div>
+            <progress id="id-193" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_193 = setInterval(function() {
+                    set_progress("#id-193", it_193, 8.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/194.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 194</div>
+            <div>电影名: 惊魂记 / Psycho</div>
+            <div>一句话: 故事的反转与反转，分裂电影的始祖。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-194" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_194 = setInterval(function() {
+                    set_progress("#id-194", it_194, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/195.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 195</div>
+            <div>电影名: 完美陌生人 / Perfetti sconosciuti</div>
+            <div>一句话: 来啊，互相伤害啊！</div>
+            <div>评分: 8.5</div>
+            <progress id="id-195" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_195 = setInterval(function() {
+                    set_progress("#id-195", it_195, 8.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/196.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 196</div>
+            <div>电影名: 功夫</div>
+            <div>一句话: 警恶惩奸，维护世界和平这个任务就交给你了，好吗？</div>
+            <div>评分: 8.4</div>
+            <progress id="id-196" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_196 = setInterval(function() {
+                    set_progress("#id-196", it_196, 8.4)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/197.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 197</div>
+            <div>电影名: 罗生门 / 羅生門</div>
+            <div>一句话: 人生的N种可能性。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-197" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_197 = setInterval(function() {
+                    set_progress("#id-197", it_197, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/198.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 198</div>
+            <div>电影名: 阿飞正传 / 阿飛正傳</div>
+            <div>一句话: 王家卫是一种风格，张国荣是一个代表。</div>
+            <div>评分: 8.5</div>
+            <progress id="id-198" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_198 = setInterval(function() {
+                    set_progress("#id-198", it_198, 8.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/199.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 199</div>
+            <div>电影名: 香水 / Perfume: The Story of a Murderer</div>
+            <div>一句话: 一个单凭体香达到高潮的男人。</div>
+            <div>评分: 8.5</div>
+            <progress id="id-199" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_199 = setInterval(function() {
+                    set_progress("#id-199", it_199, 8.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/200.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 200</div>
+            <div>电影名: 可可西里</div>
+            <div>一句话: 坚硬的信仰。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-200" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_200 = setInterval(function() {
+                    set_progress("#id-200", it_200, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/201.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 201</div>
+            <div>电影名: 牯岭街少年杀人事件 / 牯嶺街少年殺人事件</div>
+            <div>一句话: 弱者送给弱者的一刀。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-201" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_201 = setInterval(function() {
+                    set_progress("#id-201", it_201, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/202.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 202</div>
+            <div>电影名: 谍影重重2 / The Bourne Supremacy</div>
+            <div>一句话: 谁说王家卫镜头很晃？</div>
+            <div>评分: 8.6</div>
+            <progress id="id-202" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_202 = setInterval(function() {
+                    set_progress("#id-202", it_202, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/203.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 203</div>
+            <div>电影名: 朗读者 / The Reader</div>
+            <div>一句话: 当爱情跨越年龄的界限，它似乎能变得更久远一点，成为一种责任，一种水到渠成的相濡以沫。</div>
+            <div>评分: 8.5</div>
+            <progress id="id-203" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_203 = setInterval(function() {
+                    set_progress("#id-203", it_203, 8.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/204.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 204</div>
+            <div>电影名: 谍影重重 / The Bourne Identity</div>
+            <div>一句话: 哗啦啦啦啦，天在下雨，哗啦啦啦啦，云在哭泣……找自己。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-204" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_204 = setInterval(function() {
+                    set_progress("#id-204", it_204, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/205.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 205</div>
+            <div>电影名: 浪潮 / Die Welle</div>
+            <div>一句话: 世界离独裁只有五天。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-205" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_205 = setInterval(function() {
+                    set_progress("#id-205", it_205, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/206.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 206</div>
+            <div>电影名: 疯狂的石头</div>
+            <div>一句话: 中国版《两杆大烟枪》。</div>
+            <div>评分: 8.4</div>
+            <progress id="id-206" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_206 = setInterval(function() {
+                    set_progress("#id-206", it_206, 8.4)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/207.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 207</div>
+            <div>电影名: 战争之王 / Lord of War</div>
+            <div>一句话: 做一颗让别人需要你的棋子。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-207" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_207 = setInterval(function() {
+                    set_progress("#id-207", it_207, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/208.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 208</div>
+            <div>电影名: 初恋这件小事 / สิ่งเล็กเล็กที่เรียกว่า...รัก</div>
+            <div>一句话: 黑小鸭速效美白记。</div>
+            <div>评分: 8.3</div>
+            <progress id="id-208" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_208 = setInterval(function() {
+                    set_progress("#id-208", it_208, 8.3)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/209.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 209</div>
+            <div>电影名: 地球上的星星 / Taare Zameen Par</div>
+            <div>一句话: 天使保护事件始末。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-209" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_209 = setInterval(function() {
+                    set_progress("#id-209", it_209, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/210.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 210</div>
+            <div>电影名: 青蛇</div>
+            <div>一句话: 人生如此，浮生如斯。谁人言，花彼岸，此生情长意短。谁都是不懂爱的罢了。</div>
+            <div>评分: 8.5</div>
+            <progress id="id-210" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_210 = setInterval(function() {
+                    set_progress("#id-210", it_210, 8.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/211.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 211</div>
+            <div>电影名: 奇迹男孩 / Wonder</div>
+            <div>一句话: 世界不完美，爱会有奇迹。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-211" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_211 = setInterval(function() {
+                    set_progress("#id-211", it_211, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/212.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 212</div>
+            <div>电影名: 终结者2：审判日 / Terminator 2: Judgment Day</div>
+            <div>一句话: 少见的超越首部的续集，动作片中的经典。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-212" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_212 = setInterval(function() {
+                    set_progress("#id-212", it_212, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/213.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 213</div>
+            <div>电影名: 爱在午夜降临前 / Before Midnight</div>
+            <div>一句话: 所谓爱情，就是话唠一路，都不会心生腻烦，彼此嫌弃。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-213" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_213 = setInterval(function() {
+                    set_progress("#id-213", it_213, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/214.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 214</div>
+            <div>电影名: 新龙门客栈 / 新龍門客棧</div>
+            <div>一句话: 嬉笑怒骂，调风动月。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-214" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_214 = setInterval(function() {
+                    set_progress("#id-214", it_214, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/215.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 215</div>
+            <div>电影名: 源代码 / Source Code</div>
+            <div>一句话: 邓肯·琼斯继《月球》之后再度奉献出一部精彩绝伦的科幻佳作。</div>
+            <div>评分: 8.4</div>
+            <progress id="id-215" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_215 = setInterval(function() {
+                    set_progress("#id-215", it_215, 8.4)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/216.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 216</div>
+            <div>电影名: 步履不停 / 歩いても 歩いても</div>
+            <div>一句话: 日本的家庭电影已经是世界巅峰了，步履不停是巅峰中的佳作。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-216" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_216 = setInterval(function() {
+                    set_progress("#id-216", it_216, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/217.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 217</div>
+            <div>电影名: 釜山行 / 부산행</div>
+            <div>一句话: 揭露人性的丧尸题材力作。</div>
+            <div>评分: 8.4</div>
+            <progress id="id-217" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_217 = setInterval(function() {
+                    set_progress("#id-217", it_217, 8.4)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/218.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 218</div>
+            <div>电影名: 小萝莉的猴神大叔 / Bajrangi Bhaijaan</div>
+            <div>一句话: 宝莱坞的萝莉与大叔。</div>
+            <div>评分: 8.5</div>
+            <progress id="id-218" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_218 = setInterval(function() {
+                    set_progress("#id-218", it_218, 8.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/219.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 219</div>
+            <div>电影名: 无耻混蛋 / Inglourious Basterds</div>
+            <div>一句话: 昆汀同学越来越变态了，比北野武还杜琪峰。</div>
+            <div>评分: 8.5</div>
+            <progress id="id-219" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_219 = setInterval(function() {
+                    set_progress("#id-219", it_219, 8.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/220.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 220</div>
+            <div>电影名: 再次出发之纽约遇见你 / Begin Again</div>
+            <div>一句话: 爱我就给我看你的播放列表。</div>
+            <div>评分: 8.5</div>
+            <progress id="id-220" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_220 = setInterval(function() {
+                    set_progress("#id-220", it_220, 8.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/221.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 221</div>
+            <div>电影名: 一次别离 / جدایی نادر از سیمین</div>
+            <div>一句话: 只有有信仰的人才能说出事实真相。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-221" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_221 = setInterval(function() {
+                    set_progress("#id-221", it_221, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/222.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 222</div>
+            <div>电影名: 追随 / Following</div>
+            <div>一句话: 诺兰的牛逼来源于内心散发出的恐惧。</div>
+            <div>评分: 8.9</div>
+            <progress id="id-222" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_222 = setInterval(function() {
+                    set_progress("#id-222", it_222, 8.9)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/223.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 223</div>
+            <div>电影名: 新世界 / 신세계</div>
+            <div>一句话: 要做就做得狠一点，这样才能活下去。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-223" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_223 = setInterval(function() {
+                    set_progress("#id-223", it_223, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/224.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 224</div>
+            <div>电影名: 绿里奇迹 / The Green Mile</div>
+            <div>一句话: 天使暂时离开。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-224" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_224 = setInterval(function() {
+                    set_progress("#id-224", it_224, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/225.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 225</div>
+            <div>电影名: 血钻 / Blood Diamond</div>
+            <div>一句话: 每个美丽事物背后都是滴血的现实。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-225" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_225 = setInterval(function() {
+                    set_progress("#id-225", it_225, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/226.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 226</div>
+            <div>电影名: 2001太空漫游 / 2001: A Space Odyssey</div>
+            <div>一句话: 现代科幻电影的开山之作，最伟大导演的最伟大影片。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-226" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_226 = setInterval(function() {
+                    set_progress("#id-226", it_226, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/227.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 227</div>
+            <div>电影名: 彗星来的那一夜 / Coherence</div>
+            <div>一句话: 小成本大魅力。</div>
+            <div>评分: 8.5</div>
+            <progress id="id-227" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_227 = setInterval(function() {
+                    set_progress("#id-227", it_227, 8.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/228.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 228</div>
+            <div>电影名: 城市之光 / City Lights</div>
+            <div>一句话: 永远的小人物，伟大的卓别林。</div>
+            <div>评分: 9.3</div>
+            <progress id="id-228" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_228 = setInterval(function() {
+                    set_progress("#id-228", it_228, 9.3)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/229.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 229</div>
+            <div>电影名: 东京物语 / 東京物語</div>
+            <div>一句话: 东京那么大，如果有一天走失了，恐怕一辈子不能再相见。</div>
+            <div>评分: 9.2</div>
+            <progress id="id-229" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_229 = setInterval(function() {
+                    set_progress("#id-229", it_229, 9.2)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/230.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 230</div>
+            <div>电影名: 撞车 / Crash</div>
+            <div>一句话: 天使与魔鬼的冲撞。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-230" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_230 = setInterval(function() {
+                    set_progress("#id-230", it_230, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/231.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 231</div>
+            <div>电影名: 疯狂的麦克斯4：狂暴之路 / Mad Max: Fury Road</div>
+            <div>一句话: “多么美好的一天！”轰轰轰砰咚，啪哒哒哒轰隆隆，磅~</div>
+            <div>评分: 8.6</div>
+            <progress id="id-231" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_231 = setInterval(function() {
+                    set_progress("#id-231", it_231, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/232.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 232</div>
+            <div>电影名: 梦之安魂曲 / Requiem for a Dream</div>
+            <div>一句话: 一场没有春天的噩梦。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-232" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_232 = setInterval(function() {
+                    set_progress("#id-232", it_232, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/233.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 233</div>
+            <div>电影名: 聚焦 / Spotlight</div>
+            <div>一句话: 新闻人的理性求真。</div>
+            <div>评分: 8.8</div>
+            <progress id="id-233" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_233 = setInterval(function() {
+                    set_progress("#id-233", it_233, 8.8)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/234.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 234</div>
+            <div>电影名: E.T. 外星人 / E.T.: The Extra-Terrestrial</div>
+            <div>一句话: 生病的E.T.皮肤的颜色就像柿子饼。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-234" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_234 = setInterval(function() {
+                    set_progress("#id-234", it_234, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/235.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 235</div>
+            <div>电影名: 黑鹰坠落 / Black Hawk Down</div>
+            <div>一句话: 还原真实而残酷的战争。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-235" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_235 = setInterval(function() {
+                    set_progress("#id-235", it_235, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/236.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 236</div>
+            <div>电影名: 遗愿清单 / The Bucket List</div>
+            <div>一句话: 用剩余不多的时间，去燃烧整个生命。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-236" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_236 = setInterval(function() {
+                    set_progress("#id-236", it_236, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/237.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 237</div>
+            <div>电影名: 这个男人来自地球 / The Man from Earth</div>
+            <div>一句话: 科幻真正的魅力不是视觉效果能取代的。</div>
+            <div>评分: 8.5</div>
+            <progress id="id-237" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_237 = setInterval(function() {
+                    set_progress("#id-237", it_237, 8.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/238.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 238</div>
+            <div>电影名: 末路狂花 / Thelma & Louise</div>
+            <div>一句话: 没有了退路，只好飞向自由。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-238" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_238 = setInterval(function() {
+                    set_progress("#id-238", it_238, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/239.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 239</div>
+            <div>电影名: 发条橙 / A Clockwork Orange</div>
+            <div>一句话: 我完全康复了。</div>
+            <div>评分: 8.5</div>
+            <progress id="id-239" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_239 = setInterval(function() {
+                    set_progress("#id-239", it_239, 8.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/240.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 240</div>
+            <div>电影名: 哈利·波特与阿兹卡班的囚徒 / Harry Potter and the Prisoner of Azkaban</div>
+            <div>一句话: </div>
+            <div>评分: 8.5</div>
+            <progress id="id-240" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_240 = setInterval(function() {
+                    set_progress("#id-240", it_240, 8.5)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/241.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 241</div>
+            <div>电影名: 哈利·波特与密室 / Harry Potter and the Chamber of Secrets</div>
+            <div>一句话: 魔法的密室之门已打开...</div>
+            <div>评分: 8.4</div>
+            <progress id="id-241" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_241 = setInterval(function() {
+                    set_progress("#id-241", it_241, 8.4)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/242.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 242</div>
+            <div>电影名: 变脸 / Face/Off</div>
+            <div>一句话: 当发哥的风衣、墨镜出现在了凯奇身上⋯⋯</div>
+            <div>评分: 8.4</div>
+            <progress id="id-242" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_242 = setInterval(function() {
+                    set_progress("#id-242", it_242, 8.4)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/243.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 243</div>
+            <div>电影名: 我爱你 / 그대를 사랑합니다</div>
+            <div>一句话: 你要相信，这世上真的有爱存在，不管在什么年纪</div>
+            <div>评分: 9.0</div>
+            <progress id="id-243" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_243 = setInterval(function() {
+                    set_progress("#id-243", it_243, 9.0)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/244.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 244</div>
+            <div>电影名: 国王的演讲 / The King's Speech</div>
+            <div>一句话: 皇上无话儿。</div>
+            <div>评分: 8.4</div>
+            <progress id="id-244" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_244 = setInterval(function() {
+                    set_progress("#id-244", it_244, 8.4)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/245.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 245</div>
+            <div>电影名: 勇闯夺命岛 / The Rock</div>
+            <div>一句话: 类型片的极致。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-245" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_245 = setInterval(function() {
+                    set_progress("#id-245", it_245, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/246.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 246</div>
+            <div>电影名: 千钧一发 / Gattaca</div>
+            <div>一句话: 一部能引人思考的科幻励志片。</div>
+            <div>评分: 8.7</div>
+            <progress id="id-246" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_246 = setInterval(function() {
+                    set_progress("#id-246", it_246, 8.7)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/247.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 247</div>
+            <div>电影名: 驴得水</div>
+            <div>一句话: 过去的如果就让它过去了，未来只会越来越糟！</div>
+            <div>评分: 8.3</div>
+            <progress id="id-247" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_247 = setInterval(function() {
+                    set_progress("#id-247", it_247, 8.3)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/248.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 248</div>
+            <div>电影名: 黄金三镖客 / Il buono, il brutto, il cattivo.</div>
+            <div>一句话: 最棒的西部片。</div>
+            <div>评分: 9.1</div>
+            <progress id="id-248" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_248 = setInterval(function() {
+                    set_progress("#id-248", it_248, 9.1)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/249.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 249</div>
+            <div>电影名: 非常嫌疑犯 / The Usual Suspects</div>
+            <div>一句话: 我不信仰上帝，但我敬畏上帝。</div>
+            <div>评分: 8.6</div>
+            <progress id="id-249" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_249 = setInterval(function() {
+                    set_progress("#id-249", it_249, 8.6)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+    <div style="display: flex; border: dashed lightblue 2px; margin: 10px;">
+        <img style="width: 10%; height: 10%;" src="../cached/250.jpg">
+        <div style="padding-left: 20px">
+            <div>排名: 250</div>
+            <div>电影名: 秒速5厘米 / 秒速5センチメートル</div>
+            <div>一句话: 青春就是放弃和怀念。</div>
+            <div>评分: 8.3</div>
+            <progress id="id-250" style="width: 500px" value="0", max="10"></progress>
+            <script>
+                let it_250 = setInterval(function() {
+                    set_progress("#id-250", it_250, 8.3)
+                }, 20)
+            </script>
+        </div>
+    </div>
+
+</body>
+</html>
